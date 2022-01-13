@@ -9,7 +9,7 @@ This is a docker image which contains `docker` and `docker compose`. It is usefu
 
 You can mount a docker socket from your host or from a `docker:dind` container into this container.
 
-- Replace `<version>` with `latest` or one of the tags.
+- Replace `<version>` with `latest` or one of the [tags](https://hub.docker.com/r/mazzolino/docker-compose/tags).
 - The `<ARGS>` should contain arguments for `docker compose`, e.g. `build app`.
 
 ```bash
