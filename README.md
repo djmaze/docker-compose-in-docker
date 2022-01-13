@@ -1,5 +1,8 @@
 # Docker Compose in a container
 
+[![Build Status](https://ci.strahlungsfrei.de/api/badges/djmaze/docker-compose-in-docker/status.svg)](https://ci.strahlungsfrei.de/djmaze/docker-compose-in-docker)
+[![Docker Stars](https://img.shields.io/docker/stars/mazzolino/docker-compose.svg)](https://hub.docker.com/r/mazzolino/docker-compose/) [![Docker Pulls](https://img.shields.io/docker/pulls/mazzolino/docker-compose.svg)](https://hub.docker.com/r/mazzolino/docker-compose/)
+
 This is a docker image which contains `docker` and `docker compose`. It is useful for building apps inside a CI environment such as [Drone](https://docs.drone.io/).
 
 ## Usage
