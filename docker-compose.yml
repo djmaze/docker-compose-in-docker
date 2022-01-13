@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - DOCKER_VERSION=20.10.12
+        - COMPOSE_VERSION=2.2.3
+    image: mazzolino/docker-compose:2.2.3

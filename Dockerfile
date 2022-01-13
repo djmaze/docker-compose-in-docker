@@ -1,10 +1,7 @@
-FROM docker
+ARG DOCKER_VERSION=20.10.12
+FROM docker:${DOCKER_VERSION}
 
-COPY requirements.txt .
-
-RUN apk add --no-cache \
-    python3 \
-    && pip3 install -r requirements.txt \
-    && rm -rf /root/.cache $(find / -regex '.*\.py[co]')
-
-ENTRYPOINT ["docker-compose"]
+ARG COMPOSE_VERSION=2.2.3
+RUN mkdir -p /root/.docker/cli-plugins \
+ && wget https://github.com/docker/compose/releases/download/v${COMPOSE_VERSION}/docker-compose-linux-x86_64 -O /root/.docker/cli-plugins/docker-compose \
+ && chmod u+x /root/.docker/cli-plugins/docker-compose
