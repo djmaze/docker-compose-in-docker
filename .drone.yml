@@ -9,6 +9,9 @@ steps:
     settings:
       auto_tag: true
       repo: mazzolino/docker-compose
+      build_args:
+        - DOCKER_VERSION=20.10.12
+        - COMPOSE_VERSION=2.2.3
       platforms:
         - linux/amd64
       username:
